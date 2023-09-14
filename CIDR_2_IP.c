@@ -51,7 +51,10 @@ int main(int argc, char *argv[]) {
     }
 
     printf("CIDR netmask supplied was %s\n", cidr);
+    printf("IP addresses\n");
+    printf("------------\n");
     print_ip_range(start_ip, end_ip);
+    printf("\n");
 
     return 0;
 }
