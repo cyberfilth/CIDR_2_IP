@@ -20,11 +20,12 @@ int calculate_ip_range(const char *cidr, uint32_t *start_ip, uint32_t *end_ip) {
         return 0; // Invalid IP address
     }
 
-    *start_ip = ntohl(addr.s_addr);
-    *end_ip = *start_ip | ((1u << (32 - prefix_len)) - 1);
+    *start_ip = ntohl(addr.s_addr) & (~((1u << (32 - prefix_len)) - 1));
+    *end_ip = (*start_ip | ((1u << (32 - prefix_len)) - 1));
 
     return 1; // Success
 }
+
 
 // Function to print the IP range
 void print_ip_range(uint32_t start_ip, uint32_t end_ip) {
