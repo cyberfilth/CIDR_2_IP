@@ -3,7 +3,7 @@ Convert a netmask in CIDR notation to a list of IP addresses.
 
 Compile with:
 ```sh
-gcc -o CIDR_2_IP CIDR_2_IP.c
+gcc -Os -s -o CIDR_2_IP CIDR_2_IP.c
 ```
 Use on the commandline like this:
 ```
