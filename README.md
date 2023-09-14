@@ -12,12 +12,14 @@ Use on the commandline like this:
 Example output
 ```
 CIDR netmask supplied was 192.168.0.2/24
+IP addresses
+------------
 192.168.0.2
 192.168.0.3
 192.168.0.4
 192.168.0.5
 192.168.0.6
 192.168.0.7
-192.168.0.8
+
 --SNIP--
 ```
