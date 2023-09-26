@@ -5,6 +5,8 @@ Compile with:
 ```sh
 gcc -Os -s -o CIDR_2_IP CIDR_2_IP.c
 ```
+Or [download a Linux binary](https://github.com/cyberfilth/CIDR_2_IP/releases/download/v1/CIDR_2_IP)
+
 Use on the commandline like this:
 ```
 ./CIDR_2_IP 192.168.0.2/27
