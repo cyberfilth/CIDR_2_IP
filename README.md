@@ -1,12 +1,6 @@
 # CIDR_2_IP
 Convert a netmask in CIDR notation to a list of IP addresses.
 
-Compile with:
-```sh
-gcc -Os -s -o CIDR_2_IP CIDR_2_IP.c
-```
-Or [download a Linux binary](https://github.com/cyberfilth/CIDR_2_IP/releases/download/v1/CIDR_2_IP)
-
 Use on the commandline like this:
 ```
 ./CIDR_2_IP 192.168.0.2/27
@@ -24,4 +18,14 @@ IP addresses
 192.168.0.5
 192.168.0.6
 --SNIP--
+```
+------
+
+Download and compile the source code with:
+```sh
+gcc -Os -s -o CIDR_2_IP CIDR_2_IP.c
+```
+Or [download a Linux binary](https://github.com/cyberfilth/CIDR_2_IP/releases/download/v1/CIDR_2_IP), and then make it executable with:
+```
+chmod +x CIR_2_IP
 ```
